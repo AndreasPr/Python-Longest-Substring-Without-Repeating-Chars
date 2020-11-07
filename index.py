@@ -4,7 +4,7 @@ def lengthOfLongestSubstring(s):
     for i in range(0, lengthOfSubstring):
         for j in range(i, lengthOfSubstring):
             if(isUnique(s, i, j)):
-                result = max(result, j - i + 1)
+                result = max(result, j - i)
 
     return result
 
@@ -15,12 +15,11 @@ def isUnique(s, start, end):
         if(character in setOfStrings):
             return False
         setOfStrings.add(character)
-        print(setOfStrings)
 
     return True
 
 if __name__ == '__main__':
-    stringInput = "abcabc"
+    stringInput = "pwwkew"
     print(f"Input value: {stringInput}")
 
     answerForLength = lengthOfLongestSubstring(stringInput)
