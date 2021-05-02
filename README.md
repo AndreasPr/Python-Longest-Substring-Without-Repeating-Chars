@@ -1,3 +1,3 @@
 # Longest Substring Without Repeating Characters
 
-Implemented in Python
+Implementation in Python
